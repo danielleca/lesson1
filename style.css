@@ -1,0 +1,43 @@
+:root{
+    --colormob:rgb(194, 101, 116);
+    --colortab:#08baf5;
+    --colorlaptop:rgb(96, 211, 96);
+    --colordesktop:rgb(233, 141, 233);
+}
+*{
+    margin:10px;
+    padding:5px;
+    box-sizing:border-box;
+}
+body{
+    font-size:50px;
+    font-family:fantasy;
+}
+.container{
+    place-items:center;
+    background-color: rgb(190, 215, 237);
+}
+/*Mobile  -> 576px
+Tablet  -> 768px
+Laptop  -> 2560px
+Desktop -> 1200px */
+@media screen and (min-width:481px){
+    .container{
+        background-color: var(--colormob);
+    }
+}
+@media screen and (min-width:769px){
+    .container{
+        background-color: var(--colortab);
+    }
+}
+@media screen and (min-width:1025px){
+    .container{
+        background-color: var(--colorlaptop);
+    }
+}
+@media screen and (min-width:3000px){
+    .container{
+        background-color: var(--colordesktop);
+    }
+}
